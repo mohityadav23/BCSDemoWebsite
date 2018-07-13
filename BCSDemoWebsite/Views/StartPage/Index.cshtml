@@ -1,0 +1,12 @@
+﻿@using BCSDemoWebsite.Models.ViewModels
+@using EPiServer.Core
+
+@model PageViewModel<BCSDemoWebsite.Models.Pages.StartPage>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/Layouts/_Root.cshtml";
+}
+
+<div>
+    @Html.PropertyFor(m => m.CurrentPage.MainBody)
+</div>

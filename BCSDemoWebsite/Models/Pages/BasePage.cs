@@ -20,10 +20,8 @@ namespace BCSDemoWebsite.Models.Pages
                 public virtual XhtmlString MainBody { get; set; }
                 first arush commit
                 Arush second commit
-                Mohit's first 
-
-
-        mY nEW COMMENT:aRUSH
+                
+        Mohit's first 
                 
         
   

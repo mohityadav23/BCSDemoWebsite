@@ -1,0 +1,15 @@
+﻿@model BCSDemoWebsite.Models.ViewModels.ListDisplayViewModel
+
+
+@foreach (var page in Model.PageList)
+{
+    <div>
+       <img src="@Url.ContentUrl(page.Image)" style="width:100px;height:100px" />
+    </div>
+    <div>
+        @Html.PropertyFor(m => page.Heading)
+    </div>
+    <div>
+        <a href="@page.LinkURL" title="Go to Link">Read More</a>
+    </div>
+}

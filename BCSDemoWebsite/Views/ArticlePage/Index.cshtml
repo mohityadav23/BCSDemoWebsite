@@ -1,0 +1,16 @@
+﻿@model BCSDemoWebsite.Models.ViewModels.PageViewModel<BCSDemoWebsite.Models.Pages.ArticlePage>
+
+
+
+<div>
+   <img src="@Url.ContentUrl(Model.CurrentPage.Image)" />
+</div>
+<div>
+    @Html.PropertyFor(m => m.CurrentPage.Heading)
+    </div>
+
+<div>
+    @Html.PropertyFor(m => m.CurrentPage.MainBody)
+</div>
+<h2>Index</h2>
+

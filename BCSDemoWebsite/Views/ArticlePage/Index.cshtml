@@ -1,11 +1,9 @@
 ﻿@model BCSDemoWebsite.Models.ViewModels.PageViewModel<BCSDemoWebsite.Models.Pages.ArticlePage>
 
-
-
 <div>
    <img src="@Url.ContentUrl(Model.CurrentPage.Image)" />
 </div>
-<div>
+<div style="color:@Model.CurrentPage.ColorTheme">
     @Html.PropertyFor(m => m.CurrentPage.Heading)
     </div>
 
@@ -13,4 +11,7 @@
     @Html.PropertyFor(m => m.CurrentPage.MainBody)
 </div>
 <h2>Index</h2>
+<div>
+    @Html.PropertyFor(m => m.CurrentPage.ColorTheme)
+</div>
 

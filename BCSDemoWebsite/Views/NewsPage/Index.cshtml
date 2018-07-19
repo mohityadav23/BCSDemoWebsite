@@ -1,0 +1,21 @@
+﻿@model BCSDemoWebsite.Models.ViewModels.PageViewModel<BCSDemoWebsite.Models.Pages.NewsPage>
+
+
+@{
+    Layout = "~/Views/Shared/Layouts/_Root.cshtml";
+}
+
+<div>
+    <img src="@Url.ContentUrl(Model.CurrentPage.NewsImage)" />
+</div>
+<div>
+    @Html.PropertyFor(m => m.CurrentPage.NewsHeading)
+</div>
+
+<div>
+    @Html.PropertyFor(m => m.CurrentPage.NewsMainBody)
+</div>
+
+
+
+

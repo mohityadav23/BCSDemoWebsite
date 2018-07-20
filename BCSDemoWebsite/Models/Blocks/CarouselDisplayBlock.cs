@@ -11,7 +11,7 @@ namespace BCSDemoWebsite.Models.Blocks
     {
         [CultureSpecific]
         [Display(
-           Name = "Articl List Container",
+           Name = "Carousel Display Container",
            Description = "Name field's description",
            GroupName = SystemTabNames.Content,
            Order = 1)]

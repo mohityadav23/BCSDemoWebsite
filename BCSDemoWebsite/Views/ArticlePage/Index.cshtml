@@ -1,17 +1,19 @@
 ﻿@model BCSDemoWebsite.Models.ViewModels.PageViewModel<BCSDemoWebsite.Models.Pages.ArticlePage>
 
-<div>
-   <img src="@Url.ContentUrl(Model.CurrentPage.Image)" />
-</div>
-<div style="color:@Model.CurrentPage.ColorTheme">
-    @Html.PropertyFor(m => m.CurrentPage.Heading)
+@{
+    Layout = "~/Views/Shared/Layouts/_Root.cshtml";
+}
+
+<div class="container">
+    <div class="jumbotron">
+        <div class="row">
+            <img class="pull-right" src="@Url.ContentUrl(Model.CurrentPage.ArticleImage)" />
+            <h1>
+                @Html.PropertyFor(m => m.CurrentPage.ArticleHeading)
+            </h1>
+            <p>
+                @Html.PropertyFor(m => m.CurrentPage.ArticleMainBody)
+            </p>
+        </div>
     </div>
-
-<div>
-    @Html.PropertyFor(m => m.CurrentPage.MainBody)
 </div>
-<h2>Index</h2>
-<div>
-    @Html.PropertyFor(m => m.CurrentPage.ColorTheme)
-</div>
-

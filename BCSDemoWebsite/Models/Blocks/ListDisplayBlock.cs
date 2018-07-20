@@ -12,7 +12,7 @@ namespace BCSDemoWebsite.Models.Blocks
 
         [CultureSpecific]
         [Display(
-            Name = "Articl List Container",
+            Name = "Article List Container",
             Description = "Name field's description",
             GroupName = SystemTabNames.Content,
             Order = 1)]

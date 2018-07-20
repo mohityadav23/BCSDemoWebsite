@@ -4,17 +4,20 @@
 @{
     Layout = "~/Views/Shared/Layouts/_Root.cshtml";
 }
+<div class="container">
+    <div class="jumbotron">
+        <div class="row">
+            <img class="pull-right" src="@Url.ContentUrl(Model.CurrentPage.NewsImage)" />
+            <h1 style="color: @Model.CurrentPage.TextColor">
+                @Html.PropertyFor(m => m.CurrentPage.NewsHeading)
+            </h1>
+            <p>
+                @Html.PropertyFor(m => m.CurrentPage.NewsMainBody)
+            </p>
+        </div>
+    </div>
+</div>
 
-<div>
-    <img src="@Url.ContentUrl(Model.CurrentPage.NewsImage)" />
-</div>
-<div>
-    @Html.PropertyFor(m => m.CurrentPage.NewsHeading)
-</div>
-
-<div>
-    @Html.PropertyFor(m => m.CurrentPage.NewsMainBody)
-</div>
 
 
 

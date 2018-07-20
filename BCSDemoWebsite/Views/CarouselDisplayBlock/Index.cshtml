@@ -19,11 +19,10 @@
         }
     </style>
 </head>
-
+<br/>
     <div class="container">
-        <br>
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                <!-- Wrapper for slides -->
+            <!-- Wrapper for slides -->
             <div class="carousel-inner" role="listbox">
                 <div class="item active">
                     <img src="https://images.pexels.com/photos/273691/pexels-photo-273691.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Chania" width="100" height="100">
@@ -32,7 +31,7 @@
                     </div>
                 </div>
                 @foreach (var page in Model.NewsPageList)
-                { 
+                {
                     <div class="item">
                         <img src="@Url.ContentUrl(page.NewsImage)" alt="Chania" width="100" height="100">
                         <div class="carousel-caption">
@@ -53,6 +52,5 @@
             </a>
         </div>
     </div>
-
 
 

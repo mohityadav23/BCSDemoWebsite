@@ -16,7 +16,7 @@ namespace BCSDemoWebsite.Models.Pages
             Name = "Main body",
             Description = "The main body will be shown in the main content area of the page, using the XHTML-editor you can insert for example text, images and tables.",
             GroupName = SystemTabNames.Content,
-            Order = 1)]
+            Order = 0)]
         public virtual XhtmlString MainBody { get; set; }
 
         [CultureSpecific]
@@ -26,6 +26,14 @@ namespace BCSDemoWebsite.Models.Pages
            GroupName = SystemTabNames.Content,
            Order = 1)]
         public virtual ContentArea Content { get; set; }
+
+        //[CultureSpecific]
+        //[Display(
+        //   Name = "Content 2",
+        //   Description = "The main body will be shown in the main content area of the page, using the XHTML-editor you can insert for example text, images and tables.",
+        //   GroupName = SystemTabNames.Content,
+        //   Order = 2)]
+        //public virtual ContentArea Content2 { get; set; }
 
     }
 }

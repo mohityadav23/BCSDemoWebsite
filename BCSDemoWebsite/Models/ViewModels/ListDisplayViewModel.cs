@@ -10,10 +10,10 @@ namespace BCSDemoWebsite.Models.ViewModels
     {
         public ListDisplayViewModel(IEnumerable<ArticlePage> pages)
         {
-            PageList = pages;
+            ArticlePageList = pages;
         }
 
-        public IEnumerable<ArticlePage> PageList { get; set; }
+        public IEnumerable<ArticlePage> ArticlePageList { get; set; }
 
     }
 }

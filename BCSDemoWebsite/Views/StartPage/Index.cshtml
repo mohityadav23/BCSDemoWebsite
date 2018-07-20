@@ -7,9 +7,12 @@
     Layout = "~/Views/Shared/Layouts/_Root.cshtml";
 }
 
-<div>
-    @Html.PropertyFor(m => m.CurrentPage.MainBody)
+<div class="container">
+    <div>
+        @Html.PropertyFor(m => m.CurrentPage.MainBody)
+    </div>
+    <div>
+        @Html.PropertyFor(m => m.CurrentPage.Content)
+    </div>
 </div>
-<div>
-    @Html.PropertyFor(m => m.CurrentPage.Content)
-</div>
+

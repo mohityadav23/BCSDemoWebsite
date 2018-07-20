@@ -3,6 +3,7 @@ using System.ComponentModel.DataAnnotations;
 using EPiServer.Core;
 using EPiServer.DataAbstraction;
 using EPiServer.DataAnnotations;
+using EPiServer.Shell.ObjectEditing;
 using EPiServer.SpecializedProperties;
 using EPiServer.Web;
 
@@ -19,6 +20,13 @@ namespace BCSDemoWebsite.Models.Pages
             GroupName = SystemTabNames.Content,
             Order = 1)]
         public virtual string NewsHeading { get; set; }
+
+        [Display(
+        GroupName = SystemTabNames.Content,
+        Name = "Text Color",
+        Order = 50)]
+        [ClientEditor(ClientEditingClass = "dijit/ColorPalette")]
+        public virtual string TextColor { get; set; }
 
         [CultureSpecific]
         [Display(
